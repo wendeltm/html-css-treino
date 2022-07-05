@@ -1,0 +1,115 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+:root{
+    --corpreta: #000000;
+    --corverde1: #17330C;
+    --corverde2: #256F05;
+    --corverde3: #2E9B00;
+    --corverde4: #438328;
+    --verdeclaro: #abe991;
+
+    --fontetítulo: 'Press Start 2P', cursive;
+    --fontegeral: 'Arial', Helvetica, sans-serif;
+}
+
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+/*ESTILOS BODY*/
+body{
+    background-color: var(--corverde4);
+    font-family: var(--fontegeral);
+}
+
+/*ESTILOS HEADER*/
+
+header{
+    background-color: var(--corverde1);
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.479);
+    height: 100px;
+    max-width: 960px;
+    margin: auto;
+}
+
+header > h1{
+    background-color: var(--corpreta);
+    box-shadow: 1px 1px 6px var(--corverde3);
+    color: white;
+    display: inline-block;
+    height: 40px;
+    font-family: var(--fontetítulo);
+    font-size: .9em;
+    line-height: 1.3em;
+    margin: 15px;
+    padding: 5px 5px 4px 5px;
+    text-align: center;
+    width: 100px;
+}
+
+header > nav{
+    display: inline;
+    font-family: var(--fontetítulo);
+    margin-bottom: 10px;
+}
+
+nav a{
+    background-color: var(--corpreta);;
+    box-shadow: 1px 1px 6px var(--corverde3);
+    color: white;
+    margin: 10px 10px 10px 10px;
+    padding: 4px;
+    text-decoration: none;
+
+}
+
+nav > a:hover{
+    background-color: var(--corverde4);
+    transition-duration: 0.6s;
+}
+
+/*ESTILOS MAIN*/
+
+main{
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.479);
+    max-width: 960px;
+    margin: 15px auto 15px auto;
+    background-color: var(--corverde1);
+}
+
+main div{
+    background-color: white;
+    border-radius: 5px;
+    display: inline-block;
+    height: 240px;
+    width: 210px;
+    margin: 15px 13px;
+}
+
+main article{
+    background-color: var(--verdeclaro);
+    border-radius: 5px;
+    margin: 10px;
+    padding: 3px 3px 0px 3px;
+    height: 90%;
+}
+
+article h1{
+    background-color: var(--corverde4);
+    border-radius: 3px;
+    font-family: var(--fontetítulo);
+    font-size: 0.9em;
+    margin: 5px;
+    padding: 3px;
+    text-align: center;
+}
+
+article p{
+    margin: 5px;
+    text-align: justify;
+}
+
+/*ESTILOS FOOTER*/
